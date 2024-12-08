@@ -16,7 +16,7 @@ quotes = [
 # GET: Fetch a random quote
 @app.get("/get-quote")
 def get_random_quote():
-    return {"quote": random.choice(quotes)}
+    return {"quote": random.randint(1,100)}
 
 # POST: Add a new quote
 class QuoteRequest(BaseModel):
